@@ -18,6 +18,7 @@
  */
 assert = require('assert');
 dmp_mod = require('../lib/diff_match_patch.js');
+sys = require("sys");
 var DIFF_INSERT = dmp_mod.DIFF_INSERT;
 var DIFF_DELETE = dmp_mod.DIFF_DELETE;
 var DIFF_EQUAL = dmp_mod.DIFF_EQUAL;
@@ -875,6 +876,7 @@ function testPatchApply() {
         'testPatchAddContext', 'testPatchMake', 'testPatchSplitMax',
         'testPatchAddPadding', 'testPatchApply'];
     for (var x = 0; x < tests.length; x++) {
+      sys.puts("Running test: "+tests[x]);
       eval(tests[x] + '()');
     }
   }
