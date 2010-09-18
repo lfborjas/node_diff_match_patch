@@ -16,6 +16,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/*CHANGED BY lfborjas:
+    using the module conventions of node and also changed the use of the original author's assert functions
+    by using the `assert` module included with node.js. Therefore, wherever assertEquals or assertEquivalent
+    were called, now you'll find calls to assert.equal and assert.deepEqual, respectively.
+
+    Also, added the script that was in the original html test to print what tests are being called in console.
+
+    If a test fails, an exception will be raised.    
+*/
 assert = require('assert');
 dmp_mod = require('../lib/diff_match_patch.js');
 sys = require("sys");
