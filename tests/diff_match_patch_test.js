@@ -21,8 +21,9 @@ dmp_mod = require('../lib/diff_match_patch.js');
 var DIFF_INSERT = dmp_mod.DIFF_INSERT;
 var DIFF_DELETE = dmp_mod.DIFF_DELETE;
 var DIFF_EQUAL = dmp_mod.DIFF_EQUAL;
+var patch_obj = dmp_mod.patch_obj;
 // If expected and actual are the equivalent, pass the test.
-function assert.deepEqual(msg, expected, actual) {
+function assertEquivalent(msg, expected, actual) {
   if (typeof actual == 'undefined') {
     // msg is optional.
     actual = expected;
@@ -859,4 +860,23 @@ function testPatchApply() {
   assert.deepEqual(['x123', [true]], results);
 }
 
+//from the original html file
+  function runTests() {
+    var tests = ['testDiffCommonPrefix', 'testDiffCommonSuffix', 'testDiffHalfMatch',
+        'testDiffLinesToChars', 'testDiffCharsToLines', 'testDiffCleanupMerge',
+        'testDiffCleanupSemanticLossless', 'testDiffCleanupSemantic',
+        'testDiffCleanupEfficiency', 'testDiffPrettyHtml', 'testDiffText',
+        'testDiffDelta', 'testDiffXIndex', 'testDiffLevenshtein', 'testDiffPath',
+        'testDiffMain',
 
+        'testMatchAlphabet', 'testMatchBitap', 'testMatchMain',
+
+        'testPatchObj', 'testPatchFromText', 'testPatchToText',
+        'testPatchAddContext', 'testPatchMake', 'testPatchSplitMax',
+        'testPatchAddPadding', 'testPatchApply'];
+    for (var x = 0; x < tests.length; x++) {
+      eval(tests[x] + '()');
+    }
+  }
+
+  runTests();
