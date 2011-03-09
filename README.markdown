@@ -13,6 +13,6 @@ Just like the original library, you'll be using instances of the diff_match_patc
     text2= "I'm some other text";
     puts(dmp.diff_main(text1, text2));//print the difference of the texts
 
-(for more detailed documentation, as well as a complete overview of the API, please refer to the original [project site](http://code.google.com/p/google-diff-match-patch/).
+(for more detailed documentation, as well as a complete overview of the API, please refer to the original [project site](http://code.google.com/p/google-diff-match-patch/) ).
 
 
