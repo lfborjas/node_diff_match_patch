@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/lfborjas/node_diff_match_patch.png)](http://travis-ci.org/lfborjas/node_diff_match_patch)
 #diff_match_patch
 a re-packaging of the javascript library by Neil Fraser for use in server side javascript
 
