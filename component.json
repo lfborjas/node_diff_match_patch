@@ -11,6 +11,7 @@
     "neil fraser",
     "diff_match_patch"
   ],
+  "main":"./lib/diff_match_patch.js",
   "scripts": [
     "./lib/diff_match_patch.js"
   ]
