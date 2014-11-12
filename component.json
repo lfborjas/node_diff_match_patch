@@ -1,0 +1,18 @@
+{
+  "name": "diff_match_patch",
+  "repo": "marcelklehr/diff_match_patch",
+  "description": "Diff, Match and Patch libraries for Plain Text -- neil fraser's library packaged as a component",
+  "version": "0.1.1",
+  "author": "Neil Fraser",
+  "keywords": [
+    "diff",
+    "match",
+    "patch",
+    "neil fraser",
+    "diff_match_patch"
+  ],
+  "main":"./lib/diff_match_patch.js",
+  "scripts": [
+    "./lib/diff_match_patch.js"
+  ]
+}
