@@ -1,6 +1,7 @@
 {
     "name": "diff_match_patch",
-    "description": "node module package of the Neil Fraser's diff_match_patch javascript library",
+    "description": "The Diff Match and Patch libraries offer robust algorithms to perform the operations required for synchronizing plain text (repackage of the Neil Fraser's diff_match_patch)",
+    "keywords": ["diff", "match", "patch", "myer"],
     "version": "0.1.1",
     "author": "Neil Fraser",
     "mantainers":[{"name": "Luis Borjas", "email": "me@lfborjas.com"}],
